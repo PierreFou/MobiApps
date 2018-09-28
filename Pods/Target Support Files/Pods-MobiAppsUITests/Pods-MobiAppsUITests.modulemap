@@ -1,0 +1,6 @@
+framework module Pods_MobiAppsUITests {
+  umbrella header "Pods-MobiAppsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

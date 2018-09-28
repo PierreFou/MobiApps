@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08342DCB24128D6CEFF18FA8 /* Pods_MobiAppsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1632E4636DA8DAA4621C680 /* Pods_MobiAppsTests.framework */; };
+		8693BFD699E412B674ECA703 /* Pods_MobiApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDD121D836DA7F917650477 /* Pods_MobiApps.framework */; };
+		8F5F1B0E215D34300075FC36 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5F1B0D215D34300075FC36 /* DetailViewController.swift */; };
 		8FBEFCA3215A898D00719EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCA2215A898D00719EFA /* AppDelegate.swift */; };
-		8FBEFCA5215A898D00719EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCA4215A898D00719EFA /* ViewController.swift */; };
+		8FBEFCA5215A898D00719EFA /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCA4215A898D00719EFA /* WeatherListViewController.swift */; };
 		8FBEFCA8215A898D00719EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBEFCA6215A898D00719EFA /* Main.storyboard */; };
 		8FBEFCAA215A898E00719EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBEFCA9215A898E00719EFA /* Assets.xcassets */; };
 		8FBEFCAD215A898E00719EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBEFCAB215A898E00719EFA /* LaunchScreen.storyboard */; };
 		8FBEFCB8215A898E00719EFA /* MobiAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCB7215A898E00719EFA /* MobiAppsTests.swift */; };
 		8FBEFCC3215A898E00719EFA /* MobiAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCC2215A898E00719EFA /* MobiAppsUITests.swift */; };
+		8FBEFCD7215A8CB200719EFA /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCD6215A8CB200719EFA /* WeatherService.swift */; };
+		8FBEFCD9215A8EBD00719EFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCD8215A8EBD00719EFA /* Constants.swift */; };
+		8FBEFCDF215A94FA00719EFA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCDB215A94FA00719EFA /* Main.swift */; };
+		8FBEFCE0215A94FA00719EFA /* WeatherReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCDC215A94FA00719EFA /* WeatherReport.swift */; };
+		8FBEFCE1215A94FA00719EFA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCDD215A94FA00719EFA /* Weather.swift */; };
+		8FBEFCE2215A94FA00719EFA /* WeatherList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCDE215A94FA00719EFA /* WeatherList.swift */; };
+		8FBEFCE4215A974200719EFA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCE3215A974200719EFA /* UIViewControllerExtension.swift */; };
+		8FBEFCE9215A9EE900719EFA /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCE7215A9EE900719EFA /* WeatherTableViewCell.swift */; };
+		8FBEFCEA215A9EE900719EFA /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FBEFCE8215A9EE900719EFA /* WeatherTableViewCell.xib */; };
+		8FBEFCEF215AC2DF00719EFA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBEFCEE215AC2DF00719EFA /* DateExtension.swift */; };
+		9E52BF6A19920987B716CF79 /* Pods_MobiAppsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71048E69D5875E4E7D95C22 /* Pods_MobiAppsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		177692DE795AECF328CEE0FF /* Pods-MobiApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobiApps/Pods-MobiApps.release.xcconfig"; sourceTree = "<group>"; };
+		198B2CB21F56A8F781A2125E /* Pods-MobiAppsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiAppsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiAppsUITests/Pods-MobiAppsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		425B87C23B6F714B7A4D4DCE /* Pods-MobiApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiApps/Pods-MobiApps.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF8F863ADA41639E9880201 /* Pods-MobiAppsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiAppsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobiAppsUITests/Pods-MobiAppsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AC43A2F5745979F6A268AC8 /* Pods-MobiAppsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiAppsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiAppsTests/Pods-MobiAppsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FDD121D836DA7F917650477 /* Pods_MobiApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5F1B0D215D34300075FC36 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8FBEFC9F215A898D00719EFA /* MobiApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBEFCA2215A898D00719EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FBEFCA4215A898D00719EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FBEFCA4215A898D00719EFA /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
 		8FBEFCA7215A898D00719EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FBEFCA9215A898E00719EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBEFCAC215A898E00719EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +68,19 @@
 		8FBEFCBE215A898E00719EFA /* MobiAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBEFCC2215A898E00719EFA /* MobiAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiAppsUITests.swift; sourceTree = "<group>"; };
 		8FBEFCC4215A898E00719EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBEFCD6215A8CB200719EFA /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		8FBEFCD8215A8EBD00719EFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FBEFCDB215A94FA00719EFA /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		8FBEFCDC215A94FA00719EFA /* WeatherReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherReport.swift; sourceTree = "<group>"; };
+		8FBEFCDD215A94FA00719EFA /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		8FBEFCDE215A94FA00719EFA /* WeatherList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherList.swift; sourceTree = "<group>"; };
+		8FBEFCE3215A974200719EFA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8FBEFCE7215A9EE900719EFA /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		8FBEFCE8215A9EE900719EFA /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		8FBEFCEE215AC2DF00719EFA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		A3FBF75BF4971B4674AA97B9 /* Pods-MobiAppsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiAppsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobiAppsTests/Pods-MobiAppsTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1632E4636DA8DAA4621C680 /* Pods_MobiAppsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiAppsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71048E69D5875E4E7D95C22 /* Pods_MobiAppsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiAppsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8693BFD699E412B674ECA703 /* Pods_MobiApps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08342DCB24128D6CEFF18FA8 /* Pods_MobiAppsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E52BF6A19920987B716CF79 /* Pods_MobiAppsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19EAEC148276A2F2AE2AFDF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FDD121D836DA7F917650477 /* Pods_MobiApps.framework */,
+				B1632E4636DA8DAA4621C680 /* Pods_MobiAppsTests.framework */,
+				E71048E69D5875E4E7D95C22 /* Pods_MobiAppsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FBEFC96215A898D00719EFA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +128,8 @@
 				8FBEFCB6215A898E00719EFA /* MobiAppsTests */,
 				8FBEFCC1215A898E00719EFA /* MobiAppsUITests */,
 				8FBEFCA0215A898D00719EFA /* Products */,
+				C6460DB58BFA74148AD3D6C7 /* Pods */,
+				19EAEC148276A2F2AE2AFDF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +146,14 @@
 		8FBEFCA1215A898D00719EFA /* MobiApps */ = {
 			isa = PBXGroup;
 			children = (
+				8FBEFCDA215A94C200719EFA /* Entities */,
+				8FBEFCD0215A899400719EFA /* Controller */,
+				8FBEFCD4215A89B400719EFA /* Service */,
+				8FBEFCD3215A89AD00719EFA /* View */,
+				8FBEFCD2215A89A700719EFA /* Extension */,
+				8FBEFCD1215A899A00719EFA /* Utilities */,
 				8FBEFCA2215A898D00719EFA /* AppDelegate.swift */,
-				8FBEFCA4215A898D00719EFA /* ViewController.swift */,
-				8FBEFCA6215A898D00719EFA /* Main.storyboard */,
 				8FBEFCA9215A898E00719EFA /* Assets.xcassets */,
-				8FBEFCAB215A898E00719EFA /* LaunchScreen.storyboard */,
 				8FBEFCAE215A898E00719EFA /* Info.plist */,
 			);
 			path = MobiApps;
@@ -125,6 +177,83 @@
 			path = MobiAppsUITests;
 			sourceTree = "<group>";
 		};
+		8FBEFCD0215A899400719EFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCA4215A898D00719EFA /* WeatherListViewController.swift */,
+				8F5F1B0D215D34300075FC36 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FBEFCD1215A899A00719EFA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCD8215A8EBD00719EFA /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8FBEFCD2215A89A700719EFA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCE3215A974200719EFA /* UIViewControllerExtension.swift */,
+				8FBEFCEE215AC2DF00719EFA /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8FBEFCD3215A89AD00719EFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCE7215A9EE900719EFA /* WeatherTableViewCell.swift */,
+				8FBEFCEB215A9EFF00719EFA /* XIB */,
+				8FBEFCA6215A898D00719EFA /* Main.storyboard */,
+				8FBEFCAB215A898E00719EFA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FBEFCD4215A89B400719EFA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCD6215A8CB200719EFA /* WeatherService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8FBEFCDA215A94C200719EFA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCDB215A94FA00719EFA /* Main.swift */,
+				8FBEFCDD215A94FA00719EFA /* Weather.swift */,
+				8FBEFCDE215A94FA00719EFA /* WeatherList.swift */,
+				8FBEFCDC215A94FA00719EFA /* WeatherReport.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8FBEFCEB215A9EFF00719EFA /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				8FBEFCE8215A9EE900719EFA /* WeatherTableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		C6460DB58BFA74148AD3D6C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				425B87C23B6F714B7A4D4DCE /* Pods-MobiApps.debug.xcconfig */,
+				177692DE795AECF328CEE0FF /* Pods-MobiApps.release.xcconfig */,
+				7AC43A2F5745979F6A268AC8 /* Pods-MobiAppsTests.debug.xcconfig */,
+				A3FBF75BF4971B4674AA97B9 /* Pods-MobiAppsTests.release.xcconfig */,
+				198B2CB21F56A8F781A2125E /* Pods-MobiAppsUITests.debug.xcconfig */,
+				4CF8F863ADA41639E9880201 /* Pods-MobiAppsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBEFCC7215A898E00719EFA /* Build configuration list for PBXNativeTarget "MobiApps" */;
 			buildPhases = (
+				0EDA47452D2739DD66BF9677 /* [CP] Check Pods Manifest.lock */,
+				8FBEFCD5215A8AB800719EFA /* SwiftLint */,
 				8FBEFC9B215A898D00719EFA /* Sources */,
 				8FBEFC9C215A898D00719EFA /* Frameworks */,
 				8FBEFC9D215A898D00719EFA /* Resources */,
+				1717452DED9CFB1BC40965CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBEFCCA215A898E00719EFA /* Build configuration list for PBXNativeTarget "MobiAppsTests" */;
 			buildPhases = (
+				3F17E125F5A917CA19D90416 /* [CP] Check Pods Manifest.lock */,
 				8FBEFCAF215A898E00719EFA /* Sources */,
 				8FBEFCB0215A898E00719EFA /* Frameworks */,
 				8FBEFCB1215A898E00719EFA /* Resources */,
@@ -167,6 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBEFCCD215A898E00719EFA /* Build configuration list for PBXNativeTarget "MobiAppsUITests" */;
 			buildPhases = (
+				BD8E2A6905A64F5664D2F308 /* [CP] Check Pods Manifest.lock */,
 				8FBEFCBA215A898E00719EFA /* Sources */,
 				8FBEFCBB215A898E00719EFA /* Frameworks */,
 				8FBEFCBC215A898E00719EFA /* Resources */,
@@ -229,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBEFCEA215A9EE900719EFA /* WeatherTableViewCell.xib in Resources */,
 				8FBEFCAD215A898E00719EFA /* LaunchScreen.storyboard in Resources */,
 				8FBEFCAA215A898E00719EFA /* Assets.xcassets in Resources */,
 				8FBEFCA8215A898D00719EFA /* Main.storyboard in Resources */,
@@ -251,13 +386,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EDA47452D2739DD66BF9677 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobiApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1717452DED9CFB1BC40965CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobiApps/Pods-MobiApps-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobiApps/Pods-MobiApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F17E125F5A917CA19D90416 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobiAppsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FBEFCD5215A8AB800719EFA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		BD8E2A6905A64F5664D2F308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobiAppsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FBEFC9B215A898D00719EFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBEFCA5215A898D00719EFA /* ViewController.swift in Sources */,
+				8FBEFCE9215A9EE900719EFA /* WeatherTableViewCell.swift in Sources */,
+				8FBEFCE2215A94FA00719EFA /* WeatherList.swift in Sources */,
+				8FBEFCE0215A94FA00719EFA /* WeatherReport.swift in Sources */,
+				8F5F1B0E215D34300075FC36 /* DetailViewController.swift in Sources */,
+				8FBEFCE4215A974200719EFA /* UIViewControllerExtension.swift in Sources */,
+				8FBEFCDF215A94FA00719EFA /* Main.swift in Sources */,
+				8FBEFCA5215A898D00719EFA /* WeatherListViewController.swift in Sources */,
+				8FBEFCEF215AC2DF00719EFA /* DateExtension.swift in Sources */,
+				8FBEFCD7215A8CB200719EFA /* WeatherService.swift in Sources */,
 				8FBEFCA3215A898D00719EFA /* AppDelegate.swift in Sources */,
+				8FBEFCD9215A8EBD00719EFA /* Constants.swift in Sources */,
+				8FBEFCE1215A94FA00719EFA /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +686,7 @@
 		};
 		8FBEFCC8215A898E00719EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425B87C23B6F714B7A4D4DCE /* Pods-MobiApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +705,7 @@
 		};
 		8FBEFCC9215A898E00719EFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177692DE795AECF328CEE0FF /* Pods-MobiApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +724,7 @@
 		};
 		8FBEFCCB215A898E00719EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC43A2F5745979F6A268AC8 /* Pods-MobiAppsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +746,7 @@
 		};
 		8FBEFCCC215A898E00719EFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FBF75BF4971B4674AA97B9 /* Pods-MobiAppsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +768,7 @@
 		};
 		8FBEFCCE215A898E00719EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198B2CB21F56A8F781A2125E /* Pods-MobiAppsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +789,7 @@
 		};
 		8FBEFCCF215A898E00719EFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF8F863ADA41639E9880201 /* Pods-MobiAppsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
