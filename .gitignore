@@ -1,0 +1,8 @@
+
+### OSX ###
+*.DS_Store
+
+# Cocoapods
+Pods/
+*.xcworkspace/xcuserdata
+*.xcworkspace/contents.xcworkspacedata

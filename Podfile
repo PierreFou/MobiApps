@@ -10,6 +10,7 @@ target 'MobiApps' do
   pod 'SwiftLint'
   pod 'Alamofire', '~> 4.7'
   pod 'SDWebImage'
+  pod "PromiseKit", "~> 6.11"
 
   # Pods for MobiApps
 

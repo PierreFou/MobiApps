@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import PromiseKit
 
 class WeatherService {
     
@@ -37,6 +38,16 @@ class WeatherService {
                     completion(false)
                 }
             }
+        }
+    }
+    
+    func getWeatherPromise() -> Promise<[WeatherList]> {
+        let url = URL(string: Constants.Url.ApiCompleteUrlWeather)!
+        
+        return firstly {
+          URLSession.shared.dataTask(.promise, with: url)
+        }.compactMap {
+            return try JSONDecoder().decode(WeatherReport.self, from: $0.data).list
         }
     }
     
